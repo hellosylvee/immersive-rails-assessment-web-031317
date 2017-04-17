@@ -1,0 +1,13 @@
+<h1>Welcome, friend!</h1>
+
+<h3>Please log-in to continue.</h3>
+
+<%= form_tag @sessions do |f| %>
+  <%= f.label_tag :username %>
+  <%= f.field_tag :username %><br></br>
+
+  <%= f.label_tag :password %>
+  <%= f.field_tag :password %><br></br>
+
+  <%= f.submit 'Log In'%>
+<% end %>

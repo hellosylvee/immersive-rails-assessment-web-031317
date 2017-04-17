@@ -1,0 +1,10 @@
+<h1>Welcome</h1>
+
+<p>Add an appearance rating for a guest: </p>
+<%= form_for @guest do |f| %>
+  <%= f.label_tag :name %>
+  <%= f.text_field :name %>
+  <%= f.label_tag :rating %>
+  <%= f.text_field :rating %>
+  <input type="submit" value="Submit">
+<% end %>

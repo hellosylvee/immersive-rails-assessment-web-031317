@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    session[:user] = params[:user]
   end
 
 end
